@@ -34,15 +34,16 @@ public class Controller : MonoBehaviour
 
         if (h != 0f || v != 0f)
         {
+            transform.LookAt(transform.position + new Vector3(h, 0, v));
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 animator.SetInteger("runLevel", 2);
-                transform.Translate((new Vector3(h, 0, v) * runSpeed) * Time.deltaTime);
+                transform.Translate((new Vector3(h, 0, v) * runSpeed) * Time.deltaTime, Space.World);
             }
             else
             {
                 animator.SetInteger("runLevel", 1);
-                transform.Translate((new Vector3(h, 0, v) * moveSpeed) * Time.deltaTime);
+                transform.Translate((new Vector3(h, 0, v) * moveSpeed) * Time.deltaTime, Space.World);
             }
         }
         else
