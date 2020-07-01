@@ -34,7 +34,9 @@ public class Controller : MonoBehaviour
 
         if (h != 0f || v != 0f)
         {
-            transform.LookAt(transform.position + new Vector3(h, 0, v));
+            Vector3 lerpLookPos = Vector3.Lerp(transform.forward, new Vector3(h, 0, v), 0.75f);
+            transform.LookAt(transform.position + lerpLookPos);
+
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 animator.SetInteger("runLevel", 2);
