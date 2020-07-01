@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using UnityEngine;
 
 public class Controller : MonoBehaviour
@@ -8,7 +9,7 @@ public class Controller : MonoBehaviour
 
     private float jumpPower = 4;
     private float moveSpeed = 1;
-    private float runSpeed = 2;
+    private float runSpeed = 4;
 
     private bool isJumping;
 
@@ -29,11 +30,13 @@ public class Controller : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        transform.Translate((new Vector3(h, 0, v) * moveSpeed) * Time.deltaTime);
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             transform.Translate((new Vector3(h, 0, v) * runSpeed) * Time.deltaTime);
+        }
+        else
+        {
+            transform.Translate((new Vector3(h, 0, v) * moveSpeed) * Time.deltaTime);
         }
     }
 
