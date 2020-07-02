@@ -8,9 +8,9 @@ public class Controller : MonoBehaviour
     private Rigidbody rigid;
     private Animator animator;
 
-    private float jumpPower = 4;
-    private float moveSpeed = 1;
-    private float runSpeed = 4;
+    public float jumpPower = 8;
+    public float moveSpeed = 1;
+    public float runSpeed = 5;
 
     private bool isJumping;
 
