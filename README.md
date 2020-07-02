@@ -22,14 +22,21 @@
 * ESC : 일시 정지, 메뉴 출력  
 ***
 # 2. 개발에 사용한 외부 라이브러리 리스트 및 소개 
+* skybox - asset store
+* bg sound - 브금저장소
+* effect sound - freeSound
 
 ***
 # 3. 자체 제작한 에셋 리스트 및 소개  
-    참고한 이미지 <https://www.pinterest.ch/pin/AZkUL5FxUwXAUeg-5BkqRkkJbba3m5TI3mEq6YHhvff3DeU-r4ka9lI/>  
+* 참고한 이미지 <https://www.pinterest.ch/pin/AZkUL5FxUwXAUeg-5BkqRkkJbba3m5TI3mEq6YHhvff3DeU-r4ka9lI/>  
 <div>  
 <img width="300" src="https://user-images.githubusercontent.com/22375492/86146557-5743aa80-bb33-11ea-8ff5-3547f15decd9.jpg" >
 </div>  
 
+
+
 ***  
 # 4. 개발 내용 중 강의를 통해 학습한 부분이 어떻게 활용 되었는지에 대한 설명  
-    
+    light setting - spot light, point light
+    script - character controller, follow cam
+    UI - item count
