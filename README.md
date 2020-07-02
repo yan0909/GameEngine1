@@ -22,6 +22,7 @@
 * ESC : 일시 정지, 메뉴 출력  
 ***
 # 2. 개발에 사용한 외부 라이브러리 리스트 및 소개 
+* character model - asset store (https://assetstore.unity.com/packages/3d/animations/sd-unity-chan-haon-custom-bundle-84992)
 * skybox - asset store
 * bg sound - 브금저장소
 * effect sound - freeSound
