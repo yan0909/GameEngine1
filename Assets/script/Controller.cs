@@ -2,29 +2,39 @@
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Controller : MonoBehaviour
 {
     private Rigidbody rigid;
     private Animator animator;
 
-    public float jumpPower = 8;
+    //public float jumpPower = 8;
     public float moveSpeed = 1;
     public float runSpeed = 5;
 
-    private bool isJumping;
+    //private bool isJumping;
+    public Text uiText;
+    private int giftCount;
+    private Collider touchedGift;
+
+    public FollowCam cam;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
-        isJumping = false;
+        //isJumping = false;
+        giftCount = 0;
     }
 
     void Update()
     {
         Move();
-        Jump();
+        //Jump();
+
+        uiText.text = $"Gift {giftCount}/5";
     }
 
     void Move()
@@ -54,30 +64,44 @@ public class Controller : MonoBehaviour
         }
     }
 
-        void Jump()
+    /*void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            //바닥에 있으면 점프를 실행
+            if (!isJumping)
             {
-                //바닥에 있으면 점프를 실행
-                if (!isJumping)
-                {
-                    isJumping = true;
-                    rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
-                }
-                else
-                {
-                    return;
-                }
+                isJumping = true;
+                rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
             }
-        }
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            //바닥에 닿으면
-            if (collision.gameObject.CompareTag("Ground"))
+            else
             {
-                //점프가 가능한 상태로 만듦
-                isJumping = false;
+                return;
             }
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //바닥에 닿으면
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            //점프가 가능한 상태로 만듦
+            isJumping = false;
+        }
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.gameObject.CompareTag("Box"))
+            return;
+
+        //Destroy(other.gameObject);
+        other.enabled = false;
+        other.transform.localScale = Vector3.zero;
+        giftCount++;
+        // 사운드
+        cam.PlayGiftSound(other.GetComponent<AudioSource>());
+        //audioSource.Play();
+    }
+}

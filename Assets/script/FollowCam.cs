@@ -22,4 +22,9 @@ public class FollowCam : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, cameraPosition, followSpeed * Time.deltaTime);
     }
+
+    public void PlayGiftSound(AudioSource source)
+    {
+        source.Play();
+    }
 }
