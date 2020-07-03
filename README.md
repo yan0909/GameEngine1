@@ -1,7 +1,7 @@
 # 2020_GameEngine1
 
-<center> 게임공학과 2015180004 김성은 </center>
---readme에 최종 제출한 것과 다른 내용이 있어서 수정합니다.--
+<center> 게임공학과 2015180004 김성은 </center>   
+--readme에 최종 제출한 것과 다른 내용이 있어서 수정합니다.--   
 ***  
 
 # 1. 게임 개요
@@ -37,24 +37,24 @@
 
 ***  
 # 4. 개발 내용 중 강의를 통해 학습한 부분이 어떻게 활용 되었는지에 대한 설명  
-    light setting - spot light, point light를 세팅함
-    script - 스크립트를 활용
-    UI - 아이템을 먹으면 카운트해주는 ui 표시
-    particle - 눈 내리는 하늘 제작
-    collider - mesh collider, bdx collider, capsul collider 등 오브젝트마다 적절하게 사용
-    rigidbody 
+    light setting - spot light, point light를 세팅함   
+    script - 스크립트를 활용   
+    UI - 아이템을 먹으면 카운트해주는 ui 표시   
+    particle - 눈 내리는 하늘 제작   
+    collider - mesh collider, bdx collider, capsul collider 등 오브젝트마다 적절하게 사용   
+    rigidbody    
 ***    
-# 5. 그 외 학습한 부분
-    audio source을 통해  배경음악과 효과음을 추가
-    게임에 필요한 스크립트 제작 (controller, item, follow cam, sound effect)
-    애니메이션 컨트롤러 사용과 스크립트에 연결하는 방법 학습
+# 5. 그 외 학습한 부분     
+    audio source을 통해  배경음악과 효과음을 추가   
+    게임에 필요한 스크립트 제작 (controller, item, follow cam, sound effect)   
+    애니메이션 컨트롤러 사용과 스크립트에 연결하는 방법 학습   
 ***    
-# 6. 아쉬운 점
-    스크립트는 간단하게 구현할 예정이라 모델링 먼저 하고 나서 유니티에서 작업하려고 했는데 작업기간 조절 실패
-    맵 세팅이 생각보다 너무 오래 걸려서 게임 완성 후 검수할 시간이 부족했음
-    너무 모델링 자체에만 집중하다보니 강의에서 다룬 기능들을 모두 사용해보지 못함
-    light를 정말 잘 써보고 싶었는데 제대로 못해서 아쉬움
-***
+# 6. 아쉬운 점   
+    스크립트는 간단하게 구현할 예정이라 모델링 먼저 하고 나서 유니티에서 작업하려고 했는데 작업기간 조절 실패   
+    맵 세팅이 생각보다 너무 오래 걸려서 게임 완성 후 검수할 시간이 부족했음   
+    너무 모델링 자체에만 집중하다보니 강의에서 다룬 기능들을 모두 사용해보지 못함   
+    light를 정말 잘 써보고 싶었는데 제대로 못해서 아쉬움   
+***   
 # 감사합니다!!
     
     
