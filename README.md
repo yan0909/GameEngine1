@@ -33,10 +33,11 @@
 ***   
 
 # 3. 자체 제작한 에셋 리스트 및 소개  
-* 참고한 이미지 <https://www.pinterest.ch/pin/AZkUL5FxUwXAUeg-5BkqRkkJbba3m5TI3mEq6YHhvff3DeU-r4ka9lI/>  
+* 참고한 이미지     
+    - <https://www.pinterest.ch/pin/AZkUL5FxUwXAUeg-5BkqRkkJbba3m5TI3mEq6YHhvff3DeU-r4ka9lI/>  
 <div>  
 <img width="300" src="https://user-images.githubusercontent.com/22375492/86146557-5743aa80-bb33-11ea-8ff5-3547f15decd9.jpg">
-<img width ="500" src="https://user-images.githubusercontent.com/22375492/86420006-1359cc80-bd10-11ea-8cf9-696a56098963.PNG">
+<img width ="400" src="https://user-images.githubusercontent.com/22375492/86420006-1359cc80-bd10-11ea-8cf9-696a56098963.PNG">
 </div>
 
 ***  
